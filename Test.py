@@ -31,4 +31,22 @@ print (aString.title())
 print(NamerModule.namer('Tim'))
 print(NamerModule.fizzBuzz(15))
 
-# classes 
+# classes
+
+class Square:
+	# stuff in the class
+	def __init__(self, sidelength):
+		self.sidelength = sidelength
+		#self.area = sidelength**2
+		#self.volume = sidelength**3
+	
+	def area(self):
+		return self.sidelength**2
+	def volume(self):
+		return self.sidelength**3
+	def perimeter(self):
+		return self.sidelength*4
+	
+mySquare = Square(10)
+print(mySquare.area())	 
+print(dir(mySquare))
