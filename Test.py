@@ -1,5 +1,6 @@
 # clear the screen
 import os 
+import NamerModule
 os.system('cls')
 
 firstName = 'Tim'
@@ -27,20 +28,7 @@ aString = "my name is Tim S."
 print (aString.capitalize())
 print (aString.title())
 
-i = 1
-result = []
+print(NamerModule.namer('Tim'))
+print(NamerModule.fizzBuzz(15))
 
-while i != 50:
-	if i%3 == 0 and i%5 == 0:
-		result.append('FizzBuzz')
-	elif i%5 == 0:
-		result.append('Buzz')
-	elif i%3 == 0:
-		result.append('Fizz')
-	else:
-		result.append(i)
-	
-	i += 1	
-		
-		
-print result
+# classes 
